@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "on-surface-variant": "#4f4440",
+          "tertiary": "#090100",
+          "on-primary-container": "#9c7e73",
+          "on-primary-fixed-variant": "#5a4137",
+          "on-tertiary-container": "#c36e51",
+          "surface-tint": "#73584e",
+          "secondary-container": "#fdae3f",
+          "outline-variant": "#d3c3be",
+          "tertiary-fixed": "#ffdbd0",
+          "inverse-primary": "#e2bfb2",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#ffdbcd",
+          "on-error-container": "#93000a",
+          "on-surface": "#1e1b17",
+          "on-secondary-fixed-variant": "#653e00",
+          "surface-bright": "#fff8f1",
+          "surface": "#fff8f1",
+          "on-tertiary-fixed-variant": "#76321a",
+          "outline": "#817470",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#2a1700",
+          "primary": "#070100",
+          "secondary-fixed": "#ffddb7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f7f0e8",
+          "surface-container-highest": "#e8e1da",
+          "surface-container": "#f4ede5",
+          "tertiary-container": "#3b0d00",
+          "on-background": "#1e1b17",
+          "surface-container-high": "#eee7df",
+          "background": "#fff8f1",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#ffb59d",
+          "inverse-surface": "#33302b",
+          "surface-container-low": "#faf3eb",
+          "on-secondary-container": "#6d4400",
+          "on-primary-fixed": "#2a170f",
+          "secondary-fixed-dim": "#ffb95c",
+          "secondary": "#855400",
+          "surface-variant": "#e8e1da",
+          "primary-fixed-dim": "#e2bfb2",
+          "surface-dim": "#e0d9d1",
+          "primary-container": "#2b1810",
+          "on-tertiary-fixed": "#390c00",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "margin": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Space Grotesk"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "headline-lg-mobile": ["Space Grotesk"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-md": ["Space Grotesk"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }],
+          "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+          "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }],
+          "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "500" }],
+          "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.03em", fontWeight: "600" }],
+          "headline-lg-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }],
+          "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+          "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "500" }],
+          "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+          "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }]
+        }
+      }
+    }
+  };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="../biin-compatible.css" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased pt-safe pb-safe min-h-screen"><main class="flex flex-col relative w-full h-full min-h-screen bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Top App Bar Navigation -->
+<header class="w-full bg-surface-container-low px-margin py-space-sm flex items-center justify-between sticky top-0 z-30 shadow-sm">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Volver atrás" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+</div>
+<div class="flex flex-col items-center text-center px-space-xs">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary">BIIN Escapadas</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Tu Itinerario en Valladolid</h1>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Guardar itinerario" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" id="btn-save-itinerary" type="button">
+<span class="material-symbols-outlined text-[20px]" id="save-icon">bookmark_border</span>
+</button>
+<button aria-label="Compartir" class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" id="btn-share-itinerary" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</header>
+<!-- Notification Toast (Hidden by default) -->
+<div class="fixed top-16 left-1/2 -translate-x-1/2 z-50 px-space-md py-space-sm bg-primary text-on-primary rounded-lg shadow-lg font-label-md text-label-md transition-opacity duration-300 opacity-0 pointer-events-none flex items-center gap-space-xs" id="status-toast">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span id="toast-text">Itinerario guardado en favoritos</span>
+</div>
+<div class="px-margin flex flex-col gap-space-md mt-space-md">
+<!-- Header Context Chip -->
+<div class="inline-flex items-center self-start gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+<span class="font-label-md text-label-md">Día cultural en la Sultana del Oriente · 4h 30m estimadas</span>
+</div>
+<!-- Transport Connection Card -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="bg-primary-container px-space-md py-space-sm flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">directions_bus</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Conexión BIIN</span>
+</div>
+<span class="font-label-md text-label-md text-surface-container-high">Ruta Mérida • Valladolid</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Llegada programada · 10:40 AM</span>
+<p class="font-body-md text-body-md font-medium text-on-surface leading-tight">Valladolid Centro</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Frente al Parque Principal Francisco Cantón</span>
+</div>
+</div>
+<div class="ml-3.5 pl-5 py-space-xs bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span class="font-label-md text-label-md">Margen libre para explorar a pie</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant pr-space-sm">4 horas y media</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Retorno recomendado · 3:30 PM</span>
+<p class="font-body-md text-body-md font-medium text-on-surface leading-tight">Terminal Central BIIN</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Salidas frecuentes cada 30 min hacia Mérida</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Pills / Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-xs no-scrollbar" role="tablist">
+<button aria-selected="true" class="tab-pill px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-colors" role="tab" type="button">
+        Ruta Sugerida
+      </button>
+<button aria-selected="false" class="tab-pill px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm transition-colors hover:bg-surface-container" role="tab" type="button">
+        Cultural &amp; Cenotes
+      </button>
+<button aria-selected="false" class="tab-pill px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm transition-colors hover:bg-surface-container" role="tab" type="button">
+        Gastronomía
+      </button>
+</div>
+<!-- Timeline Itinerary Section -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Paso a paso a pie</h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">2.4 km totales</span>
+</div>
+<!-- Timeline Items Container -->
+<div class="flex flex-col gap-space-md relative">
+<!-- Vertical connector line indicator -->
+<div class="absolute left-4 top-5 bottom-8 w-0.5 bg-surface-container-high -z-0"></div>
+<!-- Stop 1: Cenote Zací -->
+<article class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 shadow-sm mt-1">
+            1
+          </div>
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">10:45 AM – 11:45 AM</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Entrada $30 MXN</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">nordic_walking</span>
+<span>A 2 min a pie desde la bajada</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Cenote Zací y Parque Principal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Visita el impresionante cenote a cielo abierto en pleno centro histórico y camina junto a la Iglesia de San Servacio.
+            </p>
+<div class="mt-space-xs rounded-lg overflow-hidden h-28 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Majestic open-air natural Cenote Zaci in Valladolid Yucatan surrounded by lush tropical hanging vegetation, limestone rock cavern formations, turquoise crystalline water reflection with warm sunbeams entering the cavern vault in civic transit documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVXPkEueRA9jZUjjEE7JIRjO5KMw1T6GkyG5wk1KnK4tz1cW0QNEnWrmXwaQbsU1xoWcQqO5FTpq0xKyZECAVmOr62RIHsgixNHWKFg5X4HpomUe9eSZ4IrxwbONfNoSozTxkvaVZe_wEP-o7sgZGadGNIw1mhhIwywMphau2mkqwWJyyDXslzex7soTogw-Snnj4T8fXSs5D6mx9KuHSCkbkKBX3e6xjsbAZkz3AG"/>
+</div>
+</div>
+</article>
+<!-- Stop 2: Mercado Municipal Donato Bates -->
+<article class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 shadow-sm mt-1">
+            2
+          </div>
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">12:00 PM – 01:15 PM</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">Almuerzo Típico</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">directions_walk</span>
+<span>A 4 min caminando por calle 41</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Mercado Municipal Donato Bates</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Disfruta lomitos de Valladolid, longaniza asada tradicional y escabeche oriental con tortillas hechas a mano.
+            </p>
+<div class="mt-space-xs rounded-lg overflow-hidden h-28 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Authentic traditional Yucatecan culinary spread with freshly grilled longaniza de Valladolid sausages, handmade hot corn tortillas on limestone pottery, fresh habanero salsa, and earthen stone plates under soft natural restaurant light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpy9x6Xt6ib7JcvA_B1nt-XMAdgXkIBJJtBUFsVvusiBzMMBWnxYK3a1M3mbCG5hueGWMT8lh7GCV6y_nUK_XhSnKtEACjHbQDG1ku2ocNg6MiTRED6AOTsS4YybgWsYcreoabrO9DYTquxM4OgSKo_js74FIvyGi0JRBQ4a7ASmmI-qBemxtSM7stV3naoUdhnASxXzM-a1JEz1SMUl7F6tsUI4IO66Pdyud3M-Ch"/>
+</div>
+</div>
+</article>
+<!-- Stop 3: Calzada de los Frailes -->
+<article class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 shadow-sm mt-1">
+            3
+          </div>
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">01:25 PM – 02:30 PM</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Paseo colonial</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">directions_walk</span>
+<span>A 6 min a pie</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Calzada de los Frailes y Boutiques</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Camina por la calle colonial más hermosa de Yucatán con casonas de colores pastel, perfumerías y boutiques de café local.
+            </p>
+<div class="mt-space-xs rounded-lg overflow-hidden h-28 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Historic Calzada de los Frailes cobblestone street in Valladolid Mexico with restored vibrant pastel ochre and terracotta colonial houses, wrought iron lanterns, and green tropical plants along peaceful sunny walkways." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWbT19C-X7iAJtCzkZyeV9pmEMGMXqhlVPR6cmzXrh2bUImAu0Q4MiR9L7uTc8KTFEhhcgQv15H3gtlXjmYWQm78lVsS4XqRk4GjSvIiJtBuTogX7u36jxe2HQTYfOGvhiU7162L84MdKs9auxmBbtz8SWJGdPMgQ5PoxszTu_D0bZTlms4Q96Dnmqw9VUivL2kYCexu9xTBnOjnUg-nH_x2WWUg5wuEojgVCg9ZeO"/>
+</div>
+</div>
+</article>
+<!-- Stop 4: Ex Convento de San Bernardino de Siena -->
+<article class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 shadow-sm mt-1">
+            4
+          </div>
+<div class="flex-1 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">02:35 PM – 03:15 PM</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Acceso libre</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">directions_walk</span>
+<span>A 3 min a pie</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Ex Convento de San Bernardino de Siena</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Majestuoso conjunto franciscano del siglo XVI en el barrio de Sisal con su noria monumental y murales.
+            </p>
+</div>
+</article>
+<!-- Stop 5: Cierre de Ruta / Paradero Central -->
+<article class="flex items-start gap-space-sm relative z-10">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center shrink-0 shadow-sm mt-1">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</div>
+<div class="flex-1 bg-surface-container-high rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold">03:20 PM • Cierre de Ruta</span>
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm">Salida 3:30 PM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Regreso a Terminal Central BIIN</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Caminata final de 5 min al Paradero Central BIIN para tomar el autobús expreso de regreso a Mérida.
+            </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Mini Interactive Map Widget -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">map</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Circuito Peatonal Valladolid</span>
+</div>
+<button class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-0.5" type="button">
+<span>Abrir vista en vivo</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<div class="w-full h-44 bg-cover bg-center rounded-lg relative overflow-hidden flex items-end p-space-sm" data-location="Valladolid, Yucatan, Mexico" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRKuF3o1LIjk5dlKJTYfrPFCjyYdKgacvMKTyhNN-wP91REmUuhXyjYmZnKA5nuhL4XXsXYzzEecn-RxgkDbBrRlaesWwZWmjx6YrUtTwtNbRZpfN0eqm9PwR2l1nIM7D_i5_VD34cs-wlhANhb7NXdjVFEKW_f4mB4TffDwqyQhuMJwiy89p_aaEPOomiGHrjF9f5YbbC9WoHi6XgxHEWag1g_a6Lvz8sY1Bet1HI')">
+<div class="bg-primary/80 backdrop-blur-md px-space-sm py-space-xs rounded-md text-on-primary flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm">4 paradas marcadas con GPS</span>
+</div>
+</div>
+</section>
+<!-- Travel Tips Section -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm">Consejos de viaje BIIN</h3>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">footprint</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Calzado cómodo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Camina sobre adoquín colonial fresco y aceras de piedra.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">pool</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Traje de baño y toalla</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Para nadar o refrescarte en las aguas del Cenote Zací.</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Floating Action Bar -->
+<div class="fixed bottom-0 inset-x-0 bg-surface-container-lowest/95 backdrop-blur-md px-margin py-space-sm flex items-center gap-space-sm shadow-xl z-40">
+<button class="flex-1 h-12 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs hover:bg-surface-variant active:scale-98 transition-all" id="btn-offline" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>Guardar offline</span>
+</button>
+<button class="flex-1 h-12 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-98 transition-all shadow-md" id="btn-customize" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Personalizar</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    // Tab switching interaction
+    const tabs = document.querySelectorAll('.tab-pill');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary', 'text-on-primary');
+          t.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        tab.classList.add('bg-primary', 'text-on-primary');
+        tab.setAttribute('aria-selected', 'true');
+        showToast('Filtro aplicado: ' + tab.textContent.trim());
+      });
+    });
+
+    // Save toggle interaction
+    const btnSave = document.getElementById('btn-save-itinerary');
+    const saveIcon = document.getElementById('save-icon');
+    let isSaved = false;
+
+    if (btnSave && saveIcon) {
+      btnSave.addEventListener('click', () => {
+        isSaved = !isSaved;
+        if (isSaved) {
+          saveIcon.textContent = 'bookmark';
+          saveIcon.style.fontVariationSettings = "'FILL' 1";
+          showToast('Itinerario guardado en favoritos');
+        } else {
+          saveIcon.textContent = 'bookmark_border';
+          saveIcon.style.fontVariationSettings = "'FILL' 0";
+          showToast('Itinerario eliminado de favoritos');
+        }
+      });
+    }
+
+    // Share interaction
+    const btnShare = document.getElementById('btn-share-itinerary');
+    if (btnShare) {
+      btnShare.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Tu Itinerario BIIN en Valladolid',
+            text: 'Revisa este itinerario cultural de 4h 30m en Valladolid, Yucatán.',
+            url: window.location.href,
+          }).catch(() => {});
+        } else {
+          showToast('Enlace copiado al portapapeles');
+        }
+      });
+    }
+
+    // Offline download action
+    const btnOffline = document.getElementById('btn-offline');
+    if (btnOffline) {
+      btnOffline.addEventListener('click', () => {
+        showToast('Descargando itinerario y mapa offline...');
+      });
+    }
+
+    // Customize action
+    const btnCustomize = document.getElementById('btn-customize');
+    if (btnCustomize) {
+      btnCustomize.addEventListener('click', () => {
+        showToast('Abriendo editor de paradas y tiempos');
+      });
+    }
+
+    // Toast helper
+    function showToast(message) {
+      const toast = document.getElementById('status-toast');
+      const text = document.getElementById('toast-text');
+      if (!toast || !text) return;
+
+      text.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2400);
+    }
+  })();
+</script></main>
+<script src="../biin-interaction.js" defer></script></body></html>

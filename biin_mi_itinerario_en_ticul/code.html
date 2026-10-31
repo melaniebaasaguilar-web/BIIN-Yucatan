@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "on-surface-variant": "#4f4440",
+          "tertiary": "#090100",
+          "on-primary-container": "#9c7e73",
+          "on-primary-fixed-variant": "#5a4137",
+          "on-tertiary-container": "#c36e51",
+          "surface-tint": "#73584e",
+          "secondary-container": "#fdae3f",
+          "outline-variant": "#d3c3be",
+          "tertiary-fixed": "#ffdbd0",
+          "inverse-primary": "#e2bfb2",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#ffdbcd",
+          "on-error-container": "#93000a",
+          "on-surface": "#1e1b17",
+          "on-secondary-fixed-variant": "#653e00",
+          "surface-bright": "#fff8f1",
+          "surface": "#fff8f1",
+          "on-tertiary-fixed-variant": "#76321a",
+          "outline": "#817470",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#2a1700",
+          "primary": "#070100",
+          "secondary-fixed": "#ffddb7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f7f0e8",
+          "surface-container-highest": "#e8e1da",
+          "surface-container": "#f4ede5",
+          "tertiary-container": "#3b0d00",
+          "on-background": "#1e1b17",
+          "surface-container-high": "#eee7df",
+          "background": "#fff8f1",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#ffb59d",
+          "inverse-surface": "#33302b",
+          "surface-container-low": "#faf3eb",
+          "on-secondary-container": "#6d4400",
+          "on-primary-fixed": "#2a170f",
+          "secondary-fixed-dim": "#ffb95c",
+          "secondary": "#855400",
+          "surface-variant": "#e8e1da",
+          "primary-fixed-dim": "#e2bfb2",
+          "surface-dim": "#e0d9d1",
+          "primary-container": "#2b1810",
+          "on-tertiary-fixed": "#390c00",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "margin": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Space Grotesk"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "headline-lg-mobile": ["Space Grotesk"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-md": ["Space Grotesk"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }],
+          "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+          "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }],
+          "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "500" }],
+          "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.03em", fontWeight: "600" }],
+          "headline-lg-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }],
+          "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+          "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "500" }],
+          "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+          "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }]
+        }
+      }
+    }
+  };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="../biin-compatible.css" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased pt-safe pb-safe min-h-screen"><main class="flex flex-col relative w-full h-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Bar Navigation -->
+<header class="flex items-center justify-between px-margin py-space-sm bg-surface-bright sticky top-0 z-30 shadow-sm">
+<div class="flex items-center space-x-3 min-w-0">
+<button aria-label="Volver atrás" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">BIIN ESCAPADAS</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Tu Itinerario en Ticul</h1>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 shrink-0">
+<button aria-label="Guardar itinerario" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" id="save-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="save-icon">bookmark_border</span>
+</button>
+<button aria-label="Compartir itinerario" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" id="share-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</header>
+<!-- Summary Meta Chip -->
+<div class="px-margin pt-space-md pb-space-sm">
+<div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[16px]">palette</span>
+<span class="font-label-md text-label-md">Alfarería y Calzado Tradicional · 4h 00m estimadas</span>
+</div>
+</div>
+<!-- Transit Connection Card -->
+<section class="px-margin py-space-xs">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm">CONEXIÓN VAN BIIN</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Ruta Mérida • Ticul</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">directions_bus</span>
+</div>
+<!-- Schedule Timestamps -->
+<div class="flex flex-col space-y-2.5 pt-1">
+<div class="flex items-start space-x-3">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary mt-1 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Llegada Programada · 11:30 AM</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Ticul Centro (Frente al Mercado Municipal)</span>
+</div>
+</div>
+<div class="ml-1 pl-3.5 py-1 bg-surface-container-low rounded-lg">
+<div class="flex items-center space-x-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Margen libre para explorar a pie y mototaxi • 4 horas</span>
+</div>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-2.5 h-2.5 rounded-full bg-primary mt-1 shrink-0"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Retorno Recomendado · 3:30 PM</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Paradero Central de Vans BIIN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Salidas cada 35 min hacia Mérida</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter / Route Navigation Tabs -->
+<nav aria-label="Pestañas de itinerario" class="px-margin pt-space-md pb-space-xs">
+<div class="flex space-x-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="tab-pill active px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary whitespace-nowrap shadow-sm transition-transform active:scale-95" type="button">
+        Ruta Sugerida
+      </button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant whitespace-nowrap shadow-sm transition-transform active:scale-95" type="button">
+        Alfarería &amp; Zapaterías
+      </button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant whitespace-nowrap shadow-sm transition-transform active:scale-95" type="button">
+        Gastronomía
+      </button>
+</div>
+</nav>
+<!-- Timeline Step-by-Step Itinerary -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Paso a paso a pie &amp; mototaxi</h2>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">2.1 km totales</span>
+</div>
+<!-- Timeline Flow -->
+<div class="relative flex flex-col space-y-6 pl-5">
+<!-- Continuous Background Guideline Rail -->
+<div aria-hidden="true" class="absolute left-2 top-3 bottom-6 w-0.5 bg-surface-variant"></div>
+<!-- Stop 1 -->
+<article class="relative flex items-start space-x-3 group">
+<div class="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-bright"></div>
+</div>
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">11:35 AM – 12:35 PM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Entrada libre</span>
+</div>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">electric_moped</span>
+<span>A 3 min en mototaxi</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Barrio de San Enrique y Talleres Alfareros</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Visita a familias de alfareros que moldean en torno manual tinajas, jaguares y réplicas mayas de barro rojo tradicional.
+          </p>
+<div class="overflow-hidden rounded-lg mt-1 h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Artisans shaping raw red clay pottery on manual kick wheels inside a rustic colonial workshop in Ticul Yucatan, earthen jars, warm morning sunlight, natural wood tones, traditional craftsmanship editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbXh8BR_HDvPYg-YJaMHXHWFwJFifKAw3es39uBNF5hVXVMbE4J7x47-s58FB-09XUle84Lo_rqbpZNjUzceoz-l9SGefgcjkkquvQyTts6lWdT_3u1XjpctJBRksaUeunqatQkVxyImes7fHld5UWS6t-lEmpP-NKB8obrFq4d2uom3zORl-E4YU6oyUSg67IvovhOmplixKeDYUr0njALlBjKrfbEGHIK3Qst0Y1"/>
+</div>
+</div>
+</article>
+<!-- Stop 2 -->
+<article class="relative flex items-start space-x-3 group">
+<div class="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-bright"></div>
+</div>
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">12:40 PM – 01:40 PM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Compras directas</span>
+</div>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">directions_walk</span>
+<span>A 5 min a pie hacia el centro</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Corredor del Calzado Artesanal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Recorre zapaterías y talleres locales de sandalias, mocasines y calzado de piel de alta calidad hechos en Ticul.
+          </p>
+<div class="overflow-hidden rounded-lg mt-1 h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Close up display of handcrafted genuine leather sandals and shoes lined on polished cedar shelves in a boutique workshop in Ticul, warm golden ambient sunlight, refined artisanal footwear minimal aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWrqDXqjjwOJJmS_RYSypzhrX0V3IXJ6PCH_Ms3dkJ7kl0vPHh406Y3k3XCBBgIaNHpbzslT5rI21kKAKcxGIBdfWnnR9ZO8rOKeJKbAkvF6Fn4z9ReMyQRJBEsMwBQWJk-UVM6gDuYbeZaagVElxLI93lDACxIQCFgJLla0eh1JyuBt2Gj2iTisjoRhD3-1axGCCW49ig9lenJZ_igunauRKyzpQIJIOi0zlxyRu7"/>
+</div>
+</div>
+</article>
+<!-- Stop 3 -->
+<article class="relative flex items-start space-x-3 group">
+<div class="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-bright"></div>
+</div>
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">01:45 PM – 02:45 PM</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Comida tradicional</span>
+</div>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">storefront</span>
+<span>En el Mercado Municipal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Poc Chuc Ticuleño y Panuchos de Pavo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Degusta el emblemático poc chuc estilo Ticul servido con chiltomate asado, frijol colado y cebolla con naranja agria.
+          </p>
+<div class="overflow-hidden rounded-lg mt-1 h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Traditional grilled Poc Chuc dish served with roasted chiltomate sauce, black beans, charred sour orange onions, and handmade corn tortillas at a vibrant market stall in Yucatan, warm natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjod6eh5VqSfplSYttBEUVVoFjeHnA0xPW9j1BluLQa31vpxNrzjsAq8MsW9R4U1PTlILejH7tMlJhqXHctg_tWZN5VNoJ4RTXQWPf1S_uQ3rWCeHLXuwtZgvqN5sgXEz50bMtUAYlxlotq779MDPUiiCHsV41r44JHRjj2gpENK9aMJsWVzj0VilbXWDy6ruRLCjb6uuaAS1uTtO5BjgQtgpY1c9vo2F2SnP8xF2b"/>
+</div>
+</div>
+</article>
+<!-- Stop 4 -->
+<article class="relative flex items-start space-x-3 group">
+<div class="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center shadow-sm">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-bright"></div>
+</div>
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-label-md text-label-md text-secondary font-semibold">02:50 PM – 03:20 PM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Patrimonio histórico</span>
+</div>
+<div class="flex items-center space-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">directions_walk</span>
+<span>A 2 min a pie</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ex Convento e Iglesia de San Antonio de Padua</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Edificación franciscana monumental con atrio abierto y retablos virreinales.
+          </p>
+<div class="overflow-hidden rounded-lg mt-1 h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Majestic Franciscan church and convent facade in Ticul Yucatan made of weathered yellow stone under a clear blue tropical sky with stone arches and open plaza, architectural travel photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc6Oknxj_hoioA7wPZDy29itei25EBcm4yedBiqiFK2LhpS3mliEUYwwTb_5oUT-p9nlkxidp3SQ3vUvmUy9vv6vR9aoomifkGvj4o6tNC8DL4ohn9d0QCJGN-awOUbXaaRESsskXLv3cMbszZi-Z5g2IogOxNQBpf7dIbwzzSJBInuK03Xy__9CHLeZ4xOeaNjHk5zoO-sRAw2fGSuKMqRmiErJSRtz2QQILvd2gJ"/>
+</div>
+</div>
+</article>
+<!-- Stop 5 / Close of Route -->
+<article class="relative flex items-start space-x-3 group">
+<div class="absolute -left-5 top-1.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>
+</div>
+<div class="w-full p-4 rounded-xl bg-surface-container-high shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">03:25 PM • Cierre de Ruta</span>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm">Salida 3:30 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Caminata de 3 min al Paradero Central BIIN para abordaje hacia Mérida.
+          </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Mini Map Preview Section -->
+<section class="px-margin py-space-sm">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">map</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Circuito Artesanal Ticul</h3>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center space-x-1 hover:bg-surface-container-high transition-colors active:scale-95" id="live-map-trigger" type="button">
+<span>Abrir vista en vivo</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<div class="w-full h-36 bg-cover bg-center rounded-lg relative overflow-hidden shadow-inner flex items-end p-2.5" data-location="Ticul, Yucatan, Mexico" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCm3a4Ug-KpkuDu7U8JnCa230iZy3yiEzfRW0vEZERE6Wx8uzflZMKGmxkge5q6acJ8wYIfBxEmdswfY_2ZchcX7aQrDiQWMo68FTIyO2x1xa90_jNcDED1OZqPdd8sEjokvGE61InHr7U1PDZok9q_-aT0Lp-gYfim58H1sjaEYUKBLB_ie51j00W9Xy0yffiA3qkbVeEWOLr5IGBYGEFLkKOj1goS0Vqy80O5UM2k')">
+<div class="px-2.5 py-1 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span>4 paradas trazadas en radio caminable</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BIIN Travel Tips / Consejos de viaje -->
+<section class="px-margin py-space-sm">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-3">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Consejos de viaje BIIN</h3>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">inventory_2</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Empaque para cerámica</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Los alfareros ofrecen embalaje especial con periódico y cartón para llevar piezas en la van sin riesgo de rotura.
+          </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col space-y-1">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">handshake</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Regateo justo</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Valora el trabajo artesanal hecho a mano en cada taller familiar; los precios locales son directos de productor.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Actions -->
+<footer class="sticky bottom-0 z-30 p-margin bg-surface-bright/95 backdrop-blur-md shadow-lg mt-space-sm flex items-center space-x-3">
+<button class="w-1/2 h-12 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center space-x-1.5 hover:bg-surface-container-high transition-colors active:scale-98" id="offline-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Guardar offline</span>
+</button>
+<button class="w-1/2 h-12 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center space-x-1.5 hover:bg-primary-container transition-colors active:scale-98" id="customize-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Personalizar</span>
+</button>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+    (function() {
+      // Bookmark button interaction
+      const saveBtn = document.getElementById('save-btn');
+      const saveIcon = document.getElementById('save-icon');
+      let isSaved = false;
+      if (saveBtn && saveIcon) {
+        saveBtn.addEventListener('click', () => {
+          isSaved = !isSaved;
+          saveIcon.textContent = isSaved ? 'bookmark' : 'bookmark_border';
+          saveIcon.style.fontVariationSettings = isSaved ? "'FILL' 1" : "'FILL' 0";
+        });
+      }
+
+      // Offline download feedback
+      const offlineBtn = document.getElementById('offline-btn');
+      if (offlineBtn) {
+        offlineBtn.addEventListener('click', () => {
+          const originalContent = offlineBtn.innerHTML;
+          offlineBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Guardado</span>';
+          offlineBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+          setTimeout(() => {
+            offlineBtn.innerHTML = originalContent;
+            offlineBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+          }, 2400);
+        });
+      }
+
+      // Tabs switcher interaction
+      const tabs = document.querySelectorAll('.tab-pill');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary', 'text-on-primary');
+            t.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          });
+          tab.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          tab.classList.add('bg-primary', 'text-on-primary');
+        });
+      });
+    })();
+  </script>
+</div></main>
+<script src="../biin-interaction.js" defer></script></body></html>

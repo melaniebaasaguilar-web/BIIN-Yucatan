@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "on-surface-variant": "#4f4440",
+          "tertiary": "#090100",
+          "on-primary-container": "#9c7e73",
+          "on-primary-fixed-variant": "#5a4137",
+          "on-tertiary-container": "#c36e51",
+          "surface-tint": "#73584e",
+          "secondary-container": "#fdae3f",
+          "outline-variant": "#d3c3be",
+          "tertiary-fixed": "#ffdbd0",
+          "inverse-primary": "#e2bfb2",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#ffdbcd",
+          "on-error-container": "#93000a",
+          "on-surface": "#1e1b17",
+          "on-secondary-fixed-variant": "#653e00",
+          "surface-bright": "#fff8f1",
+          "surface": "#fff8f1",
+          "on-tertiary-fixed-variant": "#76321a",
+          "outline": "#817470",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#2a1700",
+          "primary": "#070100",
+          "secondary-fixed": "#ffddb7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f7f0e8",
+          "surface-container-highest": "#e8e1da",
+          "surface-container": "#f4ede5",
+          "tertiary-container": "#3b0d00",
+          "on-background": "#1e1b17",
+          "surface-container-high": "#eee7df",
+          "background": "#fff8f1",
+          "error": "#ba1a1a",
+          "tertiary-fixed-dim": "#ffb59d",
+          "inverse-surface": "#33302b",
+          "surface-container-low": "#faf3eb",
+          "on-secondary-container": "#6d4400",
+          "on-primary-fixed": "#2a170f",
+          "secondary-fixed-dim": "#ffb95c",
+          "secondary": "#855400",
+          "surface-variant": "#e8e1da",
+          "primary-fixed-dim": "#e2bfb2",
+          "surface-dim": "#e0d9d1",
+          "primary-container": "#2b1810",
+          "on-tertiary-fixed": "#390c00",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-md": "1rem",
+          "margin": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Space Grotesk"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "headline-lg-mobile": ["Space Grotesk"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-md": ["Space Grotesk"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "500" }],
+          "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+          "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+          "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+          "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+        }
+      },
+    },
+  }
+</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <link href="../biin-compatible.css" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased pt-safe pb-safe min-h-screen"><main class="flex flex-col relative w-full h-full min-h-screen bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Navigation & Status Bar -->
+<div class="flex items-center justify-between py-space-sm">
+<button aria-label="Volver" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Próxima salida · 09:15 AM</span>
+</div>
+<button aria-label="Guardar en favoritos" class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary shadow-sm active:scale-95 transition-transform" id="fav-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="fav-icon">favorite_border</span>
+</button>
+</div>
+<!-- Route Header Title Block -->
+<div class="flex flex-col gap-1 mt-space-sm">
+<div class="self-start inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-primary text-on-primary text-label-sm font-label-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-[13px]">airport_shuttle</span>
+<span>RUTA COLECTIVA VAN · Capital de la Guayabera</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mt-1">Tekit</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Villa de Guayaberas y Tradición Textil · Yucatán</p>
+</div>
+<!-- Operational Metric Cards (3-up Bento Grid) -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<!-- Price Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+<span class="text-label-sm font-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">Efectivo</span>
+</div>
+<div class="mt-3">
+<div class="font-headline-md text-headline-md text-primary font-bold tracking-tight">$45 MXN</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Tarifa por pasaje</p>
+</div>
+</div>
+<!-- Seat Availability Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="material-symbols-outlined text-[22px]">airline_seat_recline_normal</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<div class="mt-3">
+<div class="font-headline-md text-headline-md text-primary font-bold">9 disponibles</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">Van colectiva con A/C</p>
+</div>
+</div>
+<!-- Departure Platform Card (Span 2) -->
+<div class="col-span-2 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">directions_bus</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Andén de Salida</span>
+<span class="font-body-md text-body-md text-primary font-semibold truncate">Terminal Parque San Juan · Calle 69</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Mérida Centro (entre 62 y 64)</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</div>
+</div>
+</div>
+<!-- Route Map & Timeline Section -->
+<div class="mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-primary">Mapeo de ruta y paradas</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tiempo estimado de viaje · ~1h 05 min</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">timeline</span>
+</div>
+<!-- Static Map Graphic Frame -->
+<div class="w-full h-36 rounded-xl bg-cover bg-center relative overflow-hidden shadow-sm flex items-end p-space-sm" data-location="Tekit, Yucatan, Mexico" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfxf9PrW3Ny9xfIuB9T76nyCgoGUXEojQ1Y960o1NS7jrk-60_R97q7EImzyuu6r0hX9_0NOQFRVej4John21_JVGgZtHspyCguUaq-IPrsN2UlAMHPmoEtLd5Wm6-cg14K_WcZw5PpSnK1W-9bqnxiYNSAfpCvoOA3Pq0IsunbRU_KeGhkHa5gTP3U08ruO717r_FSpfMF0pu595ex7s0A7rJMadh04mZ84IxiMd7')">
+<div class="bg-primary-container/90 text-on-primary px-3 py-1.5 rounded-lg backdrop-blur-sm flex items-center gap-2 text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">navigation</span>
+<span>Carretera Costera del Golfo / Mérida - Tekit (68 km)</span>
+</div>
+</div>
+<!-- Sequential Stop Timeline -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col mt-space-xs">
+<!-- Stop 1: Merida -->
+<div class="flex items-start gap-3 relative pb-5">
+<div class="flex flex-col items-center self-stretch flex-shrink-0">
+<div class="w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="w-0.5 flex-1 bg-surface-variant mt-1"></div>
+</div>
+<div class="flex-1 flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-primary font-semibold truncate">Mérida (Parque San Juan)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm whitespace-nowrap">Estás aquí</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calle 69 x 64 · Salida programada 09:15 AM</p>
+</div>
+</div>
+<!-- Stop 2: Periferico Sur / Kanasin -->
+<div class="flex items-start gap-3 relative pb-5">
+<div class="flex flex-col items-center self-stretch flex-shrink-0">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1"></div>
+<div class="w-0.5 flex-1 bg-surface-variant mt-1"></div>
+</div>
+<div class="flex-1 flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-primary font-medium truncate">Periférico Sur / Kanasín</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">09:30 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Parada de ascenso e incorporación vial</p>
+</div>
+</div>
+<!-- Stop 3: Acanceh -->
+<div class="flex items-start gap-3 relative pb-5">
+<div class="flex flex-col items-center self-stretch flex-shrink-0">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1"></div>
+<div class="w-0.5 flex-1 bg-surface-variant mt-1"></div>
+</div>
+<div class="flex-1 flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-primary font-medium truncate">Acanceh Centro</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">09:50 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Plaza principal / Pirámide de los Mascarones</p>
+</div>
+</div>
+<!-- Stop 4: Tecoh -->
+<div class="flex items-start gap-3 relative pb-5">
+<div class="flex flex-col items-center self-stretch flex-shrink-0">
+<div class="w-3 h-3 rounded-full bg-outline-variant mt-1"></div>
+<div class="w-0.5 flex-1 bg-surface-variant mt-1"></div>
+</div>
+<div class="flex-1 flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-primary font-medium truncate">Tecoh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">10:05 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Entronque Comunal y parada intermedia</p>
+</div>
+</div>
+<!-- Stop 5: Tekit Centro Destination -->
+<div class="flex items-start gap-3 relative">
+<div class="flex flex-col items-center self-stretch flex-shrink-0">
+<div class="w-3.5 h-3.5 rounded-full bg-secondary flex items-center justify-center mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+</div>
+<div class="flex-1 flex flex-col min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-body-md text-body-md text-primary font-bold truncate">Tekit Centro</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-semibold whitespace-nowrap">Destino</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Frente a la Parroquia de San Antonio de Padua · 10:20 AM</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Discovery & Itinerary Planner Card -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<!-- Top Destination Showcase Visual Banner -->
+<div class="relative w-full h-44 bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Traditional artisan tailor workshop in Tekit Yucatan with white and beige linen guayabera shirts neatly displayed on wooden hangers, warm natural morning sunlight filtering through open arched colonial doorways, showing fine embroidery details and warm earth stone textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE_ZCaLg9GcdVRYQffmNr0_atBkPXTGUbU8ESLCBeqku8_5-2G-3JgGZYQtL4VA5t_8gVnPcvrr_kYwQDQI1USc5pnIECpX6m90pfFwzzk7ADepF5FTV_mRNhZdSrfiZX0egHRz23BZdD_WzfrkUd1OwuRlAu39gTXI0q2Ve0ohXoMn2esfeaFEj7JQesPk_cLSRK9zFl5JygGEwkovRdu4mXL59xhcOrN6fzG1cyZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<div class="self-start px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container text-label-sm font-label-sm uppercase font-bold tracking-wide mb-1">
+          Top Destino Yucatán
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Descubre Tekit a tu ritmo</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Ruta Textil · Talleres de Bordado · Gastronomía Local</p>
+</div>
+</div>
+<!-- Itinerary Customizer Section -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Hacer mi itinerario · Personalizado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Selecciona tu tiempo disponible y te armamos la ruta óptima desde la llegada de la van.
+        </p>
+</div>
+<!-- Stay Duration Pill Selector -->
+<div class="grid grid-cols-3 gap-2 mt-1" id="duration-selector">
+<button class="duration-opt px-2 py-2 rounded-lg bg-primary text-on-primary text-label-sm font-label-sm text-center shadow-sm transition-all" data-val="medio" type="button">
+          Medio día<br/><span class="opacity-80 font-normal">3-4 hrs</span>
+</button>
+<button class="duration-opt px-2 py-2 rounded-lg bg-surface-container-low text-on-surface text-label-sm font-label-sm text-center shadow-sm transition-all" data-val="completo" type="button">
+          Día completo<br/><span class="opacity-80 font-normal">6 hrs</span>
+</button>
+<button class="duration-opt px-2 py-2 rounded-lg bg-surface-container-low text-on-surface text-label-sm font-label-sm text-center shadow-sm transition-all" data-val="compras" type="button">
+          Ruta Textil<br/><span class="opacity-80 font-normal">Compras</span>
+</button>
+</div>
+<!-- Key Destination Highlights Chips -->
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+          Talleres de Guayaberas
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+          Parroquia San Antonio
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+          Cenote Bekal
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+          Panaderías Tradicionales
+        </span>
+</div>
+<!-- Main Action CTA Button -->
+<button class="w-full h-12 mt-space-sm rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" id="cta-itinerary" type="button">
+<span>Hacer mi itinerario en Tekit</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions: Favorite toggle & duration chip selection
+  const favBtn = document.getElementById('fav-btn');
+  const favIcon = document.getElementById('fav-icon');
+  let isFav = false;
+
+  favBtn.addEventListener('click', () => {
+    isFav = !isFav;
+    if (isFav) {
+      favIcon.textContent = 'favorite';
+      favIcon.style.fontVariationSettings = "'FILL' 1";
+      favIcon.classList.add('text-secondary');
+    } else {
+      favIcon.textContent = 'favorite_border';
+      favIcon.style.fontVariationSettings = "'FILL' 0";
+      favIcon.classList.remove('text-secondary');
+    }
+  });
+
+  const durationOptions = document.querySelectorAll('.duration-opt');
+  durationOptions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      durationOptions.forEach(opt => {
+        opt.className = 'duration-opt px-2 py-2 rounded-lg bg-surface-container-low text-on-surface text-label-sm font-label-sm text-center shadow-sm transition-all';
+      });
+      btn.className = 'duration-opt px-2 py-2 rounded-lg bg-primary text-on-primary text-label-sm font-label-sm text-center shadow-sm transition-all';
+    });
+  });
+
+  const ctaBtn = document.getElementById('cta-itinerary');
+  ctaBtn.addEventListener('click', () => {
+    ctaBtn.classList.add('scale-[0.98]');
+    setTimeout(() => ctaBtn.classList.remove('scale-[0.98]'), 150);
+  });
+</script></main><script src="../biin-interaction.js" defer></script></body></html>
